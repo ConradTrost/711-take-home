@@ -1,0 +1,17 @@
+{
+  "name": "711-take-home",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "installs": "cd ./backend && npm i && cd ../frontend && npm i",
+    "start": "concurrently --kill-others \"cd ./backend && npm run start:dev\" \"cd ./frontend && npm run start\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^6.3.0"
+  }
+}

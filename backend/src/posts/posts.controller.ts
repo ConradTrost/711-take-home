@@ -19,8 +19,8 @@ export class PostsController {
         return this.postsService.getPosts();
     }
 
-    @Get(':id') 
-    getPost(@Param('id') postId: number) {
-        return this.postsService.getSinglePost(postId);
-    }
+    // @Get(':id') 
+    // getPost(@Param('id') postId: number) {
+    //     return this.postsService.getSinglePost(postId);
+    // }
 }

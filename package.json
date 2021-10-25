@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "installs": "cd ./backend && npm i && cd ../frontend && npm i",
+    "installs": "npm i && cd ./backend && npm i && cd ../frontend && npm i",
     "start": "concurrently --kill-others \"cd ./backend && npm run start:dev\" \"cd ./frontend && npm run start\""
   },
   "keywords": [],

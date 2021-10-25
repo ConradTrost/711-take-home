@@ -1,0 +1,14 @@
+<div id="chat-responses">
+    <div class="chat-response" *ngFor="let post of posts">
+    <p>{{post.body}}</p>
+    <p class="timestamp">{{post.timestamp}}</p>
+    </div>
+</div>
+
+
+<form class="input-form" [formGroup]="inputForm" (ngSubmit)="createPost()">
+
+    <input placeholder="body" type="text" formControlName="body" />
+
+    <button class="button" type="submit">Post</button>
+</form>

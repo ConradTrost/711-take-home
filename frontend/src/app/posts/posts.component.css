@@ -1,0 +1,38 @@
+.input-form {
+    width: 100%;
+}
+
+#chat-responses {
+    height: 50vh;
+    overflow-y: scroll;
+}
+
+.chat-response {
+    border-bottom: 1px solid grey;
+    padding: 10px 20px;
+}
+
+.input-form {
+    display: flex;
+    width: 100%;
+    border: 1px solid grey;
+    margin: 10px 0;
+}
+
+.button {
+    background-color: #C4D7F2;
+    border: none;
+    width: 30%;
+}
+
+input {
+    padding: 4px;
+    width: 70%;
+    height: 100%;
+    border: none;
+}
+
+.timestamp {
+    margin-top: 5px;
+    color: rgb(109, 109, 109);
+}

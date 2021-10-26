@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
 
+
 @Component({
     selector: 'app-posts',
     templateUrl: './posts.component.html',
@@ -19,10 +20,19 @@ export class PostsComponent {
 
   posts: any[] = [];
 
+  isPosts: boolean = true;
+
   loadPosts(): void {
     this.http.get('http://127.0.0.1:3000/posts')
     .subscribe((posts: any) => {
       this.posts = posts;
+
+      if (posts.length < 1) {
+        this.isPosts = false;
+      } else {
+        this.isPosts = true;
+      }
+
       setTimeout(() => {
         const chatClient = document.getElementById('chat-responses');
         if (chatClient) {

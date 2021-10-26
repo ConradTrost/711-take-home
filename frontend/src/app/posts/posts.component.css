@@ -36,3 +36,9 @@ input {
     margin-top: 5px;
     color: rgb(109, 109, 109);
 }
+
+.no-posts {
+    display: flex;
+    align-items: end;
+    height: 100%;
+}
